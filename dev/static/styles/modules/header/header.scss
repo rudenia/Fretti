@@ -1,0 +1,153 @@
+.header {
+  &__menu {
+    display: flex;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    overflow: hidden;
+    &-common {
+      display: flex;
+    }
+    &-main {
+      display: flex;
+      border-bottom: 1px solid $white;
+      margin-bottom: 57px;
+    }
+    & li {
+      margin-right: 65px;
+      &:last-child { margin-right: 0 }
+    }
+    &-list {
+      line-height: 140%;
+      padding-bottom: 31px;
+      border-bottom: 2px solid transparent;
+      transition: all .3s ease;
+    }
+    &-link {
+      padding-bottom: 34px;
+      cursor: pointer;
+      color: $white;
+      transition: all .3s ease;
+      &:hover {
+        color: $piper;
+        border-bottom: 2px solid $piper;
+      }
+    }
+    &-template {
+      display: flex;
+      background-color: $black;
+      padding: 30px 0;
+      &-regular {
+        display: flex;
+      }
+      &-main {
+        display: flex;
+        border-bottom: 1px solid white;
+        margin-bottom: 57px;
+        & li {
+          margin-right: 65px;
+          &:last-child { margin-right: 0 }
+        }
+      }
+      &-list {
+        line-height: 140%;
+        padding-bottom: 31px;
+        border-bottom: 2px solid transparent;
+        transition: all .3s ease;
+      }
+      &-link {
+        padding-bottom: 34px;
+        cursor: pointer;
+        color: $white;
+        transition: all .3s ease;
+        &:hover {
+          color: $piper;
+          border-bottom: 2px solid $piper;
+        }
+      }
+    }
+  }
+  &-regular {
+    display: flex;
+  }
+}
+.logo {
+  margin-right: 167px;
+  width: 113px;
+  height: 113px;
+}
+.active {
+
+}
+
+.header__regular {
+  position: relative;
+  height: 100vh;
+  .slick-list {
+    height: 100vh !important;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 65px;
+    height: 18px;
+    fill: $white;
+    border: 0;
+    cursor: pointer;
+    margin-top: -9px;
+  }
+  .slick-prev {
+    left: 0;
+    background: url('../../../static/images/sprite/arrow-prev.svg') 0 0 / 100% no-repeat;
+    margin-left: 115px;
+  }
+  .slick-next {
+    right: 0;
+    background: url('../../../static/images/sprite/arrow-next.svg') 0 0 / 100% no-repeat;
+    margin-right: 115px;
+  }
+  &__slider-photo {
+    height: 100vh;
+    width: 100%;
+  }
+  &-offer {
+    top: 10%;
+    position: absolute;
+    right: 64%;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  &-tel {
+    color: $white;
+    font-weight: 700;
+  }
+  &-title {
+    margin: 100px 0 10px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 69px;
+  }
+  &-description {
+    font-size: 35px;
+    line-height: 69px;
+  }
+  &-reservation {
+    margin-top: 10px;
+    position:relative;
+  }
+}
+
+.slick{
+  min-width: 0;
+  &-track {
+    display: flex;
+    align-items: flex-start;
+  }
+  &-list {
+    overflow: hidden;
+  }
+}

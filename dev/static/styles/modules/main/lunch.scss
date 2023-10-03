@@ -1,0 +1,21 @@
+.lunch__main {
+  padding: 100px 0;
+  background: url('../../../static/images/common/lunch__main-promo.jpg') 0 0 / 100% no-repeat;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-offer {
+    &-title {
+      //color: $piper;
+    }
+    &-description {
+      margin: 40px 0;
+      color: $white;
+      line-height: 140%;
+    }
+  }
+  &-img {
+    max-width: 760px;
+  }
+}

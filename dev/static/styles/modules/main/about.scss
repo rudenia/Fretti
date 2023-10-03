@@ -1,0 +1,114 @@
+.about__main {
+  padding: 100px 0;
+  background: url('../../../static/images/common/about__main-promo.jpg') 0 0 / 100% no-repeat;
+  &__offer {
+    border-radius: 150px 150px 0 0;
+    border: 1px solid $piper;
+    background: rgba(0, 0, 0, 0.54);
+    padding: 60px 106px 60px 110px;
+    margin: 0 auto;
+    max-width: 834px;
+    color: $white;
+    line-height: 140%;
+    &-top {
+      text-align: center;
+      margin-bottom: 30px;
+      }
+    &-title {
+      margin-bottom: 30px;
+    }
+    &-description {
+      margin-bottom: 15px;
+    }
+    &-subtitle {
+      text-align: center;
+      color: $piper;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    &-link {
+      margin: 31px auto 0;
+      max-width: 192px;
+      width: 192px;
+    }
+  }
+  &__list {
+    & li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      &:last-child {
+        margin-bottom: 0;
+        &:before {
+          margin-bottom: 35px;
+        }
+      }
+      &:before {
+        content: "";
+        height: 5px;
+        width: 5px;
+        background-color: white;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+    }
+  }
+  &__review {
+    margin-top: 100px;
+    & .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 36px;
+      & li {
+        margin-right: 5px;
+        &:last-child { margin-right: 0 }
+      }
+      & button {
+        font-size: 0;
+        max-width: 150px;
+        width: 150px;
+        height: 1px;
+        cursor: pointer;
+        border: 0;
+      }
+    }
+    & .slick-dots .slick-active button {
+      background-color: $piper;
+    }
+  }
+  &__slider {
+    margin-left: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+.about__review {
+  max-width: 475px;
+  width: 475px;
+  border: 1px solid $piper;
+  border-radius: 100px 0px 100px 100px;
+  background: rgba(0, 0, 0, 0.54);
+  padding: 30px;
+  color: $white;
+  line-height: 140%;
+  text-align: center;
+  &-stars {
+    margin: 0 auto 20px;
+  }
+  &-decoration {
+    border: 1px solid $white;
+    height: 1px;
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  &-second, &-first {
+    align-self: end;
+    //margin-right: -75px;
+  }
+}

@@ -1,0 +1,18 @@
+include ../helpers/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+    include ../modules/common/head
+    body
+        include ../modules/header/header__regular
+        include ../modules/main/lunch
+        include ../modules/main/about
+        include ../modules/main/delivery
+        include ../modules/footer/footer
+        //include ../modules/common/script
+
+        script(src="static/js/vendors/jquery-3.6.0.min.js")
+        script(src="static/js/vendors/libs.js")
+        script(src="static/js/main.js")
+        block script
