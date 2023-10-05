@@ -21,13 +21,13 @@
       line-height: 140%;
       padding-bottom: 31px;
       border-bottom: 2px solid transparent;
-      transition: all .3s ease;
+      transition: all .1s ease;
     }
     &-link {
       padding-bottom: 34px;
       cursor: pointer;
       color: $white;
-      transition: all .3s ease;
+      transition: all .1s ease;
       &:hover {
         color: $piper;
         border-bottom: 2px solid $piper;
@@ -53,18 +53,21 @@
         line-height: 140%;
         padding-bottom: 31px;
         border-bottom: 2px solid transparent;
-        transition: all .3s ease;
+        transition: all .1s ease;
       }
       &-link {
         padding-bottom: 34px;
         cursor: pointer;
         color: $white;
-        transition: all .3s ease;
+        transition: all .1s ease;
         &:hover {
           color: $piper;
           border-bottom: 2px solid $piper;
         }
       }
+    }
+    &-layout {
+      background-color: transparent;
     }
   }
   &-regular {

@@ -32,6 +32,12 @@
       max-width: 192px;
       width: 192px;
     }
+    &-bottom {
+      margin-top: 70px;
+      border-radius: 0 0 150px 150px;
+      text-align: center;
+      padding: 60px 36px;
+    }
   }
   &__list {
     & li {
@@ -91,7 +97,7 @@
   max-width: 475px;
   width: 475px;
   border: 1px solid $piper;
-  border-radius: 100px 0px 100px 100px;
+  border-radius: 100px 0 100px 100px;
   background: rgba(0, 0, 0, 0.54);
   padding: 30px;
   color: $white;
