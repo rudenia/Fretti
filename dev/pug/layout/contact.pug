@@ -1,0 +1,14 @@
+include ../helpers/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+    include ../modules/common/head
+    body
+        include ../modules/pages/contact
+        //include ../modules/common/script
+
+        script(src="static/js/vendors/jquery-3.6.0.min.js")
+        script(src="static/js/vendors/libs.js")
+        script(src="static/js/main.js")
+        block script

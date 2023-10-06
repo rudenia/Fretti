@@ -1,0 +1,39 @@
+.contact {
+  background-color: $black;
+  padding-top: 40px;
+  &__offer{
+    display: flex;
+    &-img {
+      margin-right: 75px;
+    }
+    &-menu {
+
+    }
+    &-list {
+      margin-bottom: 27px;
+      display: flex;
+      &:last-child { margin-bottom: 0 }
+    }
+    &-link {
+      color: $white;
+      display: flex;
+      flex-direction: row-reverse;
+      transition: all .6s ease;
+      &:hover {
+        color: $piper;
+      }
+      &:hover .footer__menu-link-icon {
+        fill: $piper;
+      }
+      &-icon {
+        fill: $white;
+        margin-right: 15px;
+        @include size(20px);
+        transition: all .6s ease;
+      }
+    }
+    &-map {
+      margin-top: 142px;
+    }
+  }
+}
