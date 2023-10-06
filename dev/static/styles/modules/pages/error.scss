@@ -1,0 +1,19 @@
+.error {
+  background-color: $black;
+  &__offer {
+    text-align: center;
+    &-img {
+      margin: 0 auto;
+    }
+    &-description {
+      color: $piper;
+      font-size: 25px;
+      margin: -160px 0 22px;
+    }
+    &-link {
+      max-width: 130px;
+      width: 130px;
+      margin: 0 auto;
+    }
+  }
+}
