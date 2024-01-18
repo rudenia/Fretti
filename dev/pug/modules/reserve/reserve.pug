@@ -1,0 +1,13 @@
+form(action="mail.php").reserve__form#reserve__form
+    input(type="hidden", name="project_name" value="Fretti").reserve__form__input
+    input(type="hidden", name="admin_email" value="viewerr@gmail.com").reserve__form__input
+    input(type="hidden", name="reserve__form_subject" value="Reserve").reserve__form__input
+    h2.reserve__reserve__form-title Rezerwacja stolika w parę klików
+    input(type="text", name="name" required, placeholder="Imię").reserve__form__input
+    .reserve__form__item
+        input(type="text", name="email" required, placeholder="Почта", pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})").reserve__form__input
+        input(type="text", name="phone" required, placeholder="Номер телефона" pattern="[0-9_-]{10}").reserve__form__input
+    textarea(name="comment", placeholder="Комментарий").reserve__form__input.reserve__form__message
+    .reserve__form__button
+        +icon('arrow', 'reserve__form__button-icon')
+        button(name="submit").reserve__form__button-submit Отправить

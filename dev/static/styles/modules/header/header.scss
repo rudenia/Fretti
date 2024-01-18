@@ -12,6 +12,7 @@
       display: flex;
       border-bottom: 1px solid $white;
       margin-bottom: 57px;
+      margin-top: 25px;
     }
     & li {
       margin-right: 65px;
@@ -127,6 +128,10 @@
   &-tel {
     color: $white;
     font-weight: 700;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $piper;
+    }
   }
   &-title {
     margin: 100px 0 10px;
@@ -141,6 +146,8 @@
   &-reservation {
     margin-top: 10px;
     position:relative;
+    letter-spacing: 0.8px;
+
   }
 }
 

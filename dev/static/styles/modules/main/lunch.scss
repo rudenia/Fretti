@@ -1,11 +1,14 @@
 .lunch__main {
   padding: 100px 0;
-  background: url('../../../static/images/common/lunch__main-promo.jpg') 0 0 / 100% no-repeat;
+  background: url('../../../static/images/common/lunch__main-promo.jpg') 0 0 / 127% no-repeat;
   &-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &-offer {
+    max-width: 350px;
+    width: 350px;
     &-title {
       //color: $piper;
     }

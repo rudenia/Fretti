@@ -1,0 +1,10 @@
+.reserve {
+  background-image: url(../images/common/reserve.png);
+  padding-bottom: 100px;
+  &__form {
+    &-title {
+      text-align: center;
+      color: $white;
+    }
+  }
+}
